@@ -246,7 +246,56 @@ footer {
   gap: 20px;
 }
 
+
+/* Profile hero layout */
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 65px;
+  align-items: center;
+}
+
+.profile-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile-photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+}
+
+.contact-line {
+  margin: 22px 0 0;
+  font-size: 16px;
+}
+
+.contact-line a {
+  font-weight: 500;
+}
+
 @media (max-width: 760px) {
+
+  /* Profile hero on mobile */
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .profile-wrap {
+    justify-content: flex-start;
+    order: -1;
+  }
+
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+  }
+
+
   nav {
     display: none;
   }
