@@ -7,7 +7,7 @@
   <title>Naicheng Jiang</title>
   <meta name="description" content="Naicheng Jiang - MSc student at KTH working on 3D spatial intelligence, multimodal learning, and reliable clinical AI.">
 
-  <link rel="stylesheet" href="style.css?v=20260914-2">
+  <link rel="stylesheet" href="style.css?v=20260914-final">
 </head>
 
 <body>
@@ -105,15 +105,14 @@
 
   <!-- Research -->
   <section id="research" class="alt">
-    <div class="container">
+    <div class="container research-container">
+
       <h2>Research</h2>
 
-      <article class="project">
-        <div class="project-visual placeholder">
-          VecSetX figure coming soon
-        </div>
+      <!-- VecSetX -->
+      <article class="project project-wide">
 
-        <div class="project-content">
+        <div class="project-heading">
           <p class="project-meta">Feb 2026 – Nov 2026 (expected)</p>
 
           <h3>VecSetX</h3>
@@ -121,7 +120,22 @@
           <p class="project-subtitle">
             3D anatomical representation and completion from partial observations
           </p>
+        </div>
 
+        <figure class="project-figure">
+          <img
+            src="assets/vecsetx/vecsetx_completion_hero.png"
+            alt="VecSetX completing missing cardiac anatomy from partial 3D observations"
+            loading="lazy"
+            decoding="async">
+
+          <figcaption>
+            Given observed anatomy in gray, VecSetX predicts the hidden structures
+            and compares them with the corresponding ground-truth missing anatomy.
+          </figcaption>
+        </figure>
+
+        <div class="project-body">
           <p>
             VecSetX studies how generative 3D models can infer missing anatomical
             structures from incomplete observations across heterogeneous medical
@@ -129,10 +143,11 @@
           </p>
 
           <p>
-            My work includes building and validating a unified 30-class anatomical
-            representation across multiple datasets, designing leak-safe completion
-            experiments, and analyzing whether conditional generative models
-            genuinely use the available anatomical context.
+            <strong>My work:</strong> I contributed to building and validating a
+            unified 30-class anatomical representation across multiple data sources,
+            designing leak-safe completion experiments, and analyzing whether
+            conditional generative models genuinely use the available anatomical
+            context.
           </p>
 
           <p class="project-note">
@@ -140,15 +155,14 @@
             CVPR 2027. I am a co-first author.
           </p>
         </div>
+
       </article>
 
 
-      <article class="project">
-        <div class="project-visual placeholder">
-          Pulse figure coming soon
-        </div>
+      <!-- Pulse -->
+      <article class="project project-wide">
 
-        <div class="project-content">
+        <div class="project-heading">
           <p class="project-meta">Jul 2026 – Present</p>
 
           <h3>Pulse</h3>
@@ -156,25 +170,43 @@
           <p class="project-subtitle">
             Reliable 3D pulmonary-tree analysis and structural quality assessment
           </p>
+        </div>
 
+        <figure class="project-figure">
+          <img
+            src="assets/pulse/pulse_structural_reliability.png"
+            alt="Pulse structural reliability finding showing a valid airway branch removed by largest-component filtering"
+            loading="lazy"
+            decoding="async">
+
+          <figcaption>
+            A Pulse reliability insight: largest-component filtering can remove
+            valid airway anatomy, showing that connectivity cleanup alone is not
+            sufficient.
+          </figcaption>
+        </figure>
+
+        <div class="project-body">
           <p>
-            Pulse investigates structural failure modes in 3D airway segmentation,
-            with an emphasis on connectivity, component structure, prediction
-            confidence, and errors that are not well captured by aggregate metrics.
+            Pulse studies structural reliability in 3D airway segmentation,
+            especially failure modes that are not captured well by aggregate
+            overlap metrics alone.
           </p>
 
           <p>
-            I led reproducible failure characterization on a 50-case ATM22
-            diagnostic cohort and analyzed the limitations of naive
-            largest-component filtering, including cases where valid,
-            high-confidence airway structures are removed.
+            <strong>My work:</strong> I led reproducible failure characterization
+            on a 50-case ATM22 diagnostic cohort, including connectivity,
+            component-level confidence, structural errors, and the safety limits
+            of largest-component post-processing.
           </p>
 
           <p class="project-note">
-            The next stage explores inference-time structural evaluation and
-            localized feedback for candidate repair and re-evaluation.
+            The current results motivate the next stage: an inference-time
+            structural evaluator that can provide localized feedback for
+            candidate repair and re-evaluation.
           </p>
         </div>
+
       </article>
 
     </div>

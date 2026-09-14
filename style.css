@@ -321,3 +321,90 @@ footer {
     flex-direction: column;
   }
 }
+
+/* FINAL RESEARCH LAYOUT START */
+
+/*
+  Research projects use a wide layout because the main figures are
+  explanatory 16:9 visuals rather than small thumbnails.
+*/
+
+.research-container {
+  max-width: 1040px;
+}
+
+.project.project-wide {
+  display: block;
+  padding: 46px 0 54px;
+  border-bottom: 1px solid var(--border);
+}
+
+.project.project-wide:last-child {
+  border-bottom: 0;
+  padding-bottom: 18px;
+}
+
+.project-heading {
+  max-width: 860px;
+  margin-bottom: 22px;
+}
+
+.project-heading h3 {
+  margin-top: 2px;
+}
+
+.project-figure {
+  margin: 28px 0 24px;
+}
+
+.project-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.project-figure figcaption {
+  max-width: 880px;
+  margin-top: 11px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.project-body {
+  max-width: 860px;
+}
+
+.project-body p:last-child {
+  margin-bottom: 0;
+}
+
+.project-note {
+  margin-top: 18px;
+  color: #475467;
+  font-size: 15px;
+}
+
+@media (max-width: 760px) {
+  .project.project-wide {
+    display: block;
+    padding: 34px 0 40px;
+  }
+
+  .project-figure {
+    margin: 22px 0 20px;
+  }
+
+  .project-figure img {
+    border-radius: 8px;
+  }
+
+  .project-figure figcaption {
+    font-size: 13px;
+  }
+}
+
+/* FINAL RESEARCH LAYOUT END */
