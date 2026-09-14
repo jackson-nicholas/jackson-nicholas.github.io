@@ -3,11 +3,223 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Naicheng Jiang</title>
+  <meta name="description" content="Naicheng Jiang - MSc student at KTH working on 3D spatial intelligence, multimodal learning, and reliable clinical AI.">
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>Naicheng Jiang</h1>
-  <p>MSc Student at KTH Royal Institute of Technology</p>
-  <p>Personal academic website under construction.</p>
+
+<header>
+  <div class="container nav">
+    <a class="name" href="#">Naicheng Jiang</a>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#manuscript">Manuscript</a>
+      <a href="#education">Education</a>
+      <a href="mailto:naicheng@kth.se">Email</a>
+    </nav>
+  </div>
+</header>
+
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">MSc Student · KTH Royal Institute of Technology</p>
+
+      <h1>Naicheng Jiang</h1>
+
+      <p class="tagline">
+        3D Spatial Intelligence · Multimodal Learning · Reliable Clinical AI
+      </p>
+
+      <p class="hero-text">
+        I am interested in building clinical world models that develop a structured
+        understanding of a patient's 3D state, learn from multimodal observations,
+        and can be inspected, updated, and corrected through feedback.
+      </p>
+
+      <div class="links">
+        <a class="button primary" href="mailto:naicheng@kth.se">Email</a>
+        <a class="button" href="https://github.com/jackson-nicholas" target="_blank">GitHub</a>
+        <a class="button" href="assets/cv/Naicheng_Jiang_CV.pdf" target="_blank">CV</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About -->
+  <section id="about">
+    <div class="container narrow">
+      <h2>About</h2>
+
+      <p>
+        I am an MSc student in Information and Network Engineering at
+        <strong>KTH Royal Institute of Technology</strong>. Before KTH, I received
+        my BSc in Electrical and Computer Engineering from
+        <strong>Shanghai Jiao Tong University</strong>.
+      </p>
+
+      <p>
+        My current research lies at the intersection of 3D vision, multimodal
+        learning, and reliable AI. I am particularly interested in learning
+        meaningful representations from incomplete 3D observations and in
+        understanding how model failures can be detected, localized, and corrected.
+      </p>
+
+      <p>
+        In the longer term, I hope to develop clinically reliable world models
+        that integrate spatial, visual, textual, and longitudinal information
+        into an evolving representation of patient state.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- Research -->
+  <section id="research" class="alt">
+    <div class="container">
+      <h2>Research</h2>
+
+      <article class="project">
+        <div class="project-visual placeholder">
+          VecSetX figure coming soon
+        </div>
+
+        <div class="project-content">
+          <p class="project-meta">Feb 2026 – Nov 2026 (expected)</p>
+
+          <h3>VecSetX</h3>
+
+          <p class="project-subtitle">
+            3D anatomical representation and completion from partial observations
+          </p>
+
+          <p>
+            VecSetX studies how generative 3D models can infer missing anatomical
+            structures from incomplete observations across heterogeneous medical
+            imaging datasets.
+          </p>
+
+          <p>
+            My work includes building and validating a unified 30-class anatomical
+            representation across multiple datasets, designing leak-safe completion
+            experiments, and analyzing whether conditional generative models
+            genuinely use the available anatomical context.
+          </p>
+
+          <p class="project-note">
+            The project is being developed into a manuscript for submission to
+            CVPR 2027. I am a co-first author.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="project">
+        <div class="project-visual placeholder">
+          Pulse figure coming soon
+        </div>
+
+        <div class="project-content">
+          <p class="project-meta">Jul 2026 – Present</p>
+
+          <h3>Pulse</h3>
+
+          <p class="project-subtitle">
+            Reliable 3D pulmonary-tree analysis and structural quality assessment
+          </p>
+
+          <p>
+            Pulse investigates structural failure modes in 3D airway segmentation,
+            with an emphasis on connectivity, component structure, prediction
+            confidence, and errors that are not well captured by aggregate metrics.
+          </p>
+
+          <p>
+            I led reproducible failure characterization on a 50-case ATM22
+            diagnostic cohort and analyzed the limitations of naive
+            largest-component filtering, including cases where valid,
+            high-confidence airway structures are removed.
+          </p>
+
+          <p class="project-note">
+            The next stage explores inference-time structural evaluation and
+            localized feedback for candidate repair and re-evaluation.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+
+  <!-- Manuscript -->
+  <section id="manuscript">
+    <div class="container narrow">
+      <h2>Manuscript in Preparation</h2>
+
+      <div class="publication">
+        <strong>VecSetX</strong>
+        <p>
+          Co-first author. Manuscript in preparation for submission to
+          CVPR 2027.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Education -->
+  <section id="education" class="alt">
+    <div class="container narrow">
+      <h2>Education</h2>
+
+      <div class="education-item">
+        <div>
+          <h3>KTH Royal Institute of Technology</h3>
+          <p>MSc in Information and Network Engineering</p>
+          <p class="muted">Stockholm, Sweden · Aug 2025 – Jun 2027 (expected)</p>
+        </div>
+      </div>
+
+      <div class="education-item">
+        <div>
+          <h3>Shanghai Jiao Tong University</h3>
+          <p>BSc in Electrical and Computer Engineering</p>
+          <p class="muted">Shanghai, China · Aug 2022 – Jun 2026</p>
+        </div>
+      </div>
+
+      <h2 class="subsection">Selected Honors</h2>
+
+      <ul class="honors">
+        <li>Outstanding Graduate, Shanghai Jiao Tong University, 2026</li>
+        <li>Selected for the GIFT Future Scholars Program, 2024</li>
+        <li>Yu Liming Scholarship, UM-SJTU Joint Institute, 2024</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+
+<footer>
+  <div class="container footer">
+    <span>Naicheng Jiang</span>
+    <span>
+      <a href="mailto:naicheng@kth.se">Email</a> ·
+      <a href="https://github.com/jackson-nicholas" target="_blank">GitHub</a>
+    </span>
+  </div>
+</footer>
+
 </body>
 </html>
