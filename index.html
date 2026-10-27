@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Naicheng Jiang</title>
-  <meta name="description" content="Naicheng Jiang - MSc student at KTH working on 3D spatial intelligence, multimodal learning, and reliable clinical AI.">
+  <meta name="description" content="Naicheng Jiang - MSc student at KTH working on 3D generative modelling, vision-language understanding, and reliable multimodal AI.">
 
   <link rel="stylesheet" href="style.css?v=20260914-final">
 </head>
@@ -39,13 +39,13 @@
         <h1>Naicheng Jiang</h1>
 
         <p class="tagline">
-          3D Spatial Intelligence · Multimodal Learning · Reliable Clinical AI
+          3D Generative Modelling · Vision-Language Understanding · Reliable AI
         </p>
 
         <p class="hero-text">
-          I am interested in building clinical world models that develop a structured
-          understanding of a patient's 3D state, learn from multimodal observations,
-          and can be inspected, updated, and corrected through feedback.
+          I study how models represent and generate 3D structure from incomplete
+          observations. My broader interests are vision-language understanding
+          and reasoning, spatial world models, and reliable, controllable AI.
         </p>
 
         <p class="contact-line">
@@ -54,7 +54,7 @@
 
         <div class="links">
           <a class="button primary"
-             href="assets/cv/Naicheng_Jiang_CV.pdf"
+             href="assets/cv/Naicheng_Jiang_CV.pdf?v=20261027"
              target="_blank">CV</a>
 
           <a class="button"
@@ -82,9 +82,10 @@
 
       <p>
         I am an MSc student in Information and Network Engineering at
-        <strong>KTH Royal Institute of Technology</strong>. Before KTH, I received
-        my BSc in Electrical and Computer Engineering from
-        <strong>Shanghai Jiao Tong University</strong>.
+        <strong>KTH Royal Institute of Technology</strong>, expecting to graduate in June 2027.
+        I follow a 3+2 bachelor’s–master’s study pathway and received my BSc in
+        Electrical and Computer Engineering from <strong>Shanghai Jiao Tong University</strong>
+        in June 2026.
       </p>
 
       <p>
@@ -95,9 +96,10 @@
       </p>
 
       <p>
-        In the longer term, I hope to develop clinically reliable world models
-        that integrate spatial, visual, textual, and longitudinal information
-        into an evolving representation of patient state.
+        Medical imaging is an important application area for my work. I aim to develop
+        methods that generalize across data sources, use the available evidence
+        faithfully, and produce outputs whose limitations can be assessed.
+        I am seeking PhD opportunities starting in autumn 2027.
       </p>
     </div>
   </section>
@@ -113,12 +115,12 @@
       <article class="project project-wide">
 
         <div class="project-heading">
-          <p class="project-meta">Feb 2026 – Nov 2026 (expected)</p>
+          <p class="project-meta">Feb 2026 – Present</p>
 
           <h3>VecSetX</h3>
 
           <p class="project-subtitle">
-            3D anatomical representation and completion from partial observations
+            Compositional 3D generation from incomplete supervision
           </p>
         </div>
 
@@ -137,17 +139,18 @@
 
         <div class="project-body">
           <p>
-            VecSetX studies how generative 3D models can infer missing anatomical
-            structures from incomplete observations across heterogeneous medical
-            imaging datasets.
+            VecSetX studies conditional completion and unconditional generation of
+            anatomical structures, learning from multiple medical imaging datasets
+            with complementary, incomplete annotations.
           </p>
 
           <p>
-            <strong>My work:</strong> I contributed to building and validating a
-            unified 30-class anatomical representation across multiple data sources,
-            designing leak-safe completion experiments, and analyzing whether
-            conditional generative models genuinely use the available anatomical
-            context.
+            <strong>My work:</strong> I extended and fine-tuned a multi-source 3D tokenizer
+            and implemented an experimental conditional diffusion transformer.
+            Through matched and shuffled context controls, I investigated whether
+            the model actually uses the observed anatomy. I also built cross-source
+            and source-holdout evaluations and analyzed geometric failure modes,
+            separating structural consistency from patient-specific accuracy.
           </p>
 
           <p class="project-note">
@@ -163,7 +166,7 @@
       <article class="project project-wide">
 
         <div class="project-heading">
-          <p class="project-meta">Jul 2026 – Present</p>
+          <p class="project-meta">Jul – Oct 2026</p>
 
           <h3>Pulse</h3>
 
@@ -201,9 +204,9 @@
           </p>
 
           <p class="project-note">
-            The current results motivate the next stage: an inference-time
-            structural evaluator that can provide localized feedback for
-            candidate repair and re-evaluation.
+            My contribution focused on reliability analysis: aggregate overlap scores
+            can improve even when post-processing removes valid structures.
+            This collaboration concluded in October 2026.
           </p>
         </div>
 
@@ -212,6 +215,25 @@
     </div>
   </section>
 
+
+  <!-- Current and planned projects -->
+  <section id="current-projects">
+    <div class="container narrow">
+      <h2>Current and Planned Projects</h2>
+      <article class="education-item">
+        <h3>Flow Matching for Image Reconstruction</h3>
+        <p class="project-meta">KTH EQ2443 · Ongoing course project with Markus Flierl</p>
+        <p>Developing an experimental study of image reconstruction from perturbed originals,
+          relating flow-estimation accuracy to reconstruction quality and computational cost.</p>
+      </article>
+      <article class="education-item">
+        <h3>3D Vision-Language Understanding</h3>
+        <p class="project-meta">Planned research with Jiancheng Yang</p>
+        <p>Connecting 3D representations with language-based understanding, with an interest
+          in spatial reasoning and consistency between model responses and visual evidence.</p>
+      </article>
+    </div>
+  </section>
 
   <!-- Manuscript -->
   <section id="manuscript">
@@ -233,6 +255,7 @@
   <section id="education" class="alt">
     <div class="container narrow">
       <h2>Education</h2>
+      <p class="muted">3+2 bachelor’s–master’s study pathway.</p>
 
       <div class="education-item">
         <div>
@@ -275,3 +298,4 @@
 
 </body>
 </html>
+
