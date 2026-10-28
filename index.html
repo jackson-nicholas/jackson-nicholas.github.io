@@ -54,7 +54,7 @@
 
         <div class="links">
           <a class="button primary"
-             href="assets/cv/Naicheng_Jiang_CV.pdf?v=20261028"
+             href="assets/cv/Naicheng_Jiang_CV.pdf?v=20261028-final"
              target="_blank">CV</a>
 
           <a class="button"
@@ -85,7 +85,7 @@
         <strong>KTH Royal Institute of Technology</strong>, expecting to graduate in June 2027.
         I follow a 3+2 bachelor’s–master’s study pathway and received my BSc in
         Electrical and Computer Engineering from <strong>Shanghai Jiao Tong University</strong>
-        in June 2026.
+        in August 2026.
       </p>
 
       <p>
@@ -146,7 +146,7 @@
 
           <p>
             <strong>My work:</strong> I extended and fine-tuned a multi-source 3D tokenizer
-            and implemented an experimental conditional diffusion transformer.
+            and prototyped a conditional diffusion transformer with cross-attention.
             Through matched and shuffled context controls, I investigated whether
             the model actually uses the observed anatomy. I also built cross-source
             and source-holdout evaluations and analyzed geometric failure modes,
@@ -162,57 +162,6 @@
       </article>
 
 
-      <!-- Pulse -->
-      <article class="project project-wide">
-
-        <div class="project-heading">
-          <p class="project-meta">Research contribution · 2026</p>
-
-          <h3>Pulse</h3>
-
-          <p class="project-subtitle">
-            Structural reliability and failure diagnosis in 3D predictions
-          </p>
-        </div>
-
-        <figure class="project-figure">
-          <img
-            src="assets/pulse/pulse_structural_reliability.png"
-            alt="Pulse structural reliability finding showing a valid airway branch removed by largest-component filtering"
-            loading="lazy"
-            decoding="async">
-
-          <figcaption>
-            A Pulse reliability insight: largest-component filtering can remove
-            valid airway anatomy, showing that connectivity cleanup alone is not
-            sufficient.
-          </figcaption>
-        </figure>
-
-        <div class="project-body">
-          <p>
-            Pulse studies structural reliability in 3D airway segmentation,
-            especially failure modes that are not captured well by aggregate
-            overlap metrics alone.
-          </p>
-
-          <p>
-            <strong>My contribution:</strong> I analyzed 50 ATM22 airway cases using
-            a reproducible evaluation of connectivity, component-level confidence
-            and overlap metrics. I identified cases where largest-component
-            filtering improved overlap scores while deleting valid,
-            high-confidence structures.
-          </p>
-
-          <p class="project-note">
-            <strong>Research relevance:</strong> This finding motivates my interest
-            in evaluating corrective interventions by both the errors they repair
-            and the valid information they preserve—a question I want to explore
-            further in spatial and multimodal reasoning.
-          </p>
-        </div>
-
-      </article>
 
     </div>
   </section>
@@ -223,16 +172,19 @@
     <div class="container narrow">
       <h2>Current and Planned Projects</h2>
       <article class="education-item">
-        <h3>Flow Matching for Image Reconstruction</h3>
-        <p class="project-meta">KTH EQ2443 · Ongoing course project</p>
-        <p>Developing an experimental study of image reconstruction from perturbed originals,
-          relating flow-estimation accuracy to reconstruction quality and computational cost.</p>
+        <h3>Flow Matching for Image Reconstruction and Translation</h3>
+        <p class="project-meta">KTH EQ2443 · Ongoing course project · Oct 2026 – Present</p>
+        <p>I am designing a U-Net velocity-field baseline for flow-matching reconstruction
+          from perturbed images, with image-to-image translation as a further research objective.</p>
+        <p>The planned experiments examine reconstruction fidelity, flow-estimation accuracy
+          and sampling cost, using image-quality metrics and runtime to study quality–compute trade-offs.</p>
       </article>
       <article class="education-item">
-        <h3>3D Vision-Language Understanding</h3>
-        <p class="project-meta">Planned research</p>
-        <p>Connecting 3D representations with language-based understanding, with an interest
-          in spatial reasoning and consistency between model responses and visual evidence.</p>
+        <h3>3D Vision–Language Understanding</h3>
+        <p class="project-meta">Proposed research</p>
+        <p>I plan to study how language-based reasoning can be grounded in volumetric
+          visual evidence, with emphasis on spatial relationships and consistency
+          between generated responses and observed anatomy.</p>
       </article>
     </div>
   </section>
@@ -271,7 +223,7 @@
         <div>
           <h3>Shanghai Jiao Tong University</h3>
           <p>BSc in Electrical and Computer Engineering</p>
-          <p class="muted">Shanghai, China · Aug 2022 – Jun 2026</p>
+          <p class="muted">Shanghai, China · Aug 2022 – Aug 2026</p>
         </div>
       </div>
 
@@ -279,7 +231,7 @@
 
       <ul class="honors">
         <li>Outstanding Graduate, Shanghai Jiao Tong University, 2026</li>
-        <li>Selected for the GIFT Future Scholars Program, 2024</li>
+        <li>Undergraduate Academic Scholarship, Class C, Shanghai Jiao Tong University (2023 and 2024)</li>
         <li>Yu Liming Scholarship, UM-SJTU Joint Institute, 2024</li>
       </ul>
     </div>
