@@ -3,11 +3,237 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Naicheng Jiang</title>
+  <meta name="description" content="Naicheng Jiang - MSc student at KTH working on 3D generative modelling, vision-language understanding, and reliable multimodal AI.">
+
+  <link rel="stylesheet" href="style.css?v=20260914-final">
 </head>
+
 <body>
-  <h1>Naicheng Jiang</h1>
-  <p>MSc Student at KTH Royal Institute of Technology</p>
-  <p>Personal academic website under construction.</p>
+
+<header>
+  <div class="container nav">
+    <a class="name" href="#">Naicheng Jiang</a>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#education">Education</a>
+      <a href="mailto:naicheng@kth.se">Email</a>
+    </nav>
+  </div>
+</header>
+
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+
+      <div class="hero-content">
+        <p class="eyebrow">MSc Student · KTH Royal Institute of Technology</p>
+
+        <h1>Naicheng Jiang</h1>
+
+        <p class="tagline">
+          3D Generative Modelling · Vision-Language Understanding · Reliable AI
+        </p>
+
+        <p class="hero-text">
+          I study how models represent and generate 3D structure from incomplete
+          observations. My broader interests are vision-language understanding
+          and reasoning, spatial world models, and reliable, controllable AI.
+        </p>
+
+        <p class="contact-line">
+          <a href="mailto:naicheng@kth.se">naicheng@kth.se</a>
+        </p>
+
+        <div class="links">
+          <a class="button primary"
+             href="assets/cv/Naicheng_Jiang_CV_Public_2026-11-10.pdf"
+             target="_blank">CV</a>
+
+          <a class="button"
+             href="#research">Research</a>
+        </div>
+      </div>
+
+      <div class="profile-wrap">
+        <img
+          class="profile-photo"
+          src="assets/profile.jpg"
+          alt="Naicheng Jiang"
+          width="220"
+          height="220">
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- About -->
+  <section id="about">
+    <div class="container narrow">
+      <h2>About</h2>
+
+      <p>
+        I am an MSc student in Information and Network Engineering at
+        <strong>KTH Royal Institute of Technology</strong>, expecting to graduate in June 2027.
+        I follow a 3+2 bachelor’s–master’s study pathway and received my BSc in
+        Electrical and Computer Engineering from <strong>Shanghai Jiao Tong University</strong>
+        in August 2026.
+      </p>
+
+      <p>
+        My current research lies at the intersection of 3D vision, multimodal
+        learning, and reliable AI. I am particularly interested in learning
+        meaningful representations from incomplete 3D observations and in
+        understanding how model failures can be detected, localized, and corrected.
+      </p>
+
+      <p>
+        Medical imaging is an important application area for my work. I aim to develop
+        methods that generalize across data sources, use the available evidence
+        faithfully, and produce outputs whose limitations can be assessed.
+        I am seeking PhD opportunities starting in autumn 2027.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- Research -->
+  <section id="research" class="alt">
+    <div class="container research-container">
+
+      <h2>Research</h2>
+
+      <!-- VecSetX -->
+      <article class="project project-wide">
+
+        <div class="project-heading">
+          <p class="project-meta">Feb 2026 – Present</p>
+
+          <h3>VecSetX</h3>
+
+          <p class="project-subtitle">
+            Compositional 3D generation from incomplete supervision
+          </p>
+        </div>
+
+        <figure class="project-figure">
+          <img
+            src="assets/vecsetx/vecsetx_completion_hero.png"
+            alt="VecSetX completing missing cardiac anatomy from partial 3D observations"
+            loading="lazy"
+            decoding="async">
+
+          <figcaption>
+            Given observed anatomy in gray, VecSetX predicts the hidden structures
+            and compares them with the corresponding ground-truth missing anatomy.
+          </figcaption>
+        </figure>
+
+        <div class="project-body">
+          <p>
+            VecSetX studies conditional completion and unconditional generation of
+            anatomical structures, learning from multiple medical imaging datasets
+            with complementary, incomplete annotations.
+          </p>
+
+          <p>
+            <strong>My work:</strong> I extended and fine-tuned a multi-source 3D tokenizer
+            and prototyped a conditional diffusion transformer with cross-attention.
+            Through matched and shuffled context controls, I investigated whether
+            the model actually uses the observed anatomy. I also built cross-source
+            and source-holdout evaluations and analyzed geometric failure modes,
+            separating structural consistency from patient-specific accuracy.
+          </p>
+
+          <p class="project-note">
+            Ongoing collaborative research on 3D anatomical completion and generation
+            from partially annotated datasets, with emphasis on multi-source learning,
+            conditional generation, and reliability evaluation.
+          </p>
+        </div>
+
+      </article>
+
+
+
+    </div>
+  </section>
+
+
+  <!-- Current and planned projects -->
+  <section id="current-projects">
+    <div class="container narrow">
+      <h2>Current and Planned Projects</h2>
+      <article class="education-item">
+        <h3>Flow Matching for Image Reconstruction and Translation</h3>
+        <p class="project-meta">KTH EQ2443 · Ongoing course project · Oct 2026 – Present</p>
+        <p>I am designing a U-Net velocity-field baseline for flow-matching reconstruction
+          from perturbed images, with image-to-image translation as a further research objective.</p>
+        <p>The planned experiments examine reconstruction fidelity, flow-estimation accuracy
+          and sampling cost, using image-quality metrics and runtime to study quality–compute trade-offs.</p>
+      </article>
+      <article class="education-item">
+        <h3>3D Vision–Language Understanding</h3>
+        <p class="project-meta">Proposed research</p>
+        <p>I plan to study how language-based reasoning can be grounded in volumetric
+          visual evidence, with emphasis on spatial relationships and consistency
+          between generated responses and observed anatomy.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="alt">
+    <div class="container narrow">
+      <h2>Education</h2>
+      <p class="muted">3+2 bachelor’s–master’s study pathway.</p>
+
+      <div class="education-item">
+        <div>
+          <h3>KTH Royal Institute of Technology</h3>
+          <p>MSc in Information and Network Engineering</p>
+          <p class="muted">Stockholm, Sweden · Aug 2025 – Jun 2027 (expected)</p>
+        </div>
+      </div>
+
+      <div class="education-item">
+        <div>
+          <h3>Shanghai Jiao Tong University</h3>
+          <p>BSc in Electrical and Computer Engineering</p>
+          <p class="muted">Shanghai, China · Aug 2022 – Aug 2026</p>
+        </div>
+      </div>
+
+      <h2 class="subsection">Selected Honors</h2>
+
+      <ul class="honors">
+        <li>Outstanding Graduate, Shanghai Jiao Tong University, 2026</li>
+        <li>Undergraduate Academic Scholarship, Class C, Shanghai Jiao Tong University (2023 and 2024)</li>
+        <li>Yu Liming Scholarship, UM-SJTU Joint Institute, 2024</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+
+<footer>
+  <div class="container footer">
+    <span>Naicheng Jiang</span>
+    <span>
+      <a href="mailto:naicheng@kth.se">Email</a> ·
+      <a href="https://github.com/jackson-nicholas" target="_blank">GitHub</a>
+    </span>
+  </div>
+</footer>
+
 </body>
 </html>
+
